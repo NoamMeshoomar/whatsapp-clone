@@ -1,0 +1,67 @@
+.Contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.Contacts::-webkit-scrollbar {
+    width: 7px;
+}
+  
+.Contacts::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+.Contacts::-webkit-scrollbar-thumb {
+    background: rgb(202, 202, 202);
+}
+  
+.Contacts::-webkit-scrollbar-thumb:hover {
+    background: rgb(173, 173, 173);
+}
+
+.Contacts .loading-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contacts .contacts-container {
+    width: 100%;
+    height: 100%;
+}
+
+.Contacts .contacts-container .add-contact {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Contacts .contacts-container .add-contact button {
+    padding: 10px 20px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--tealgreen-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.Contacts .contacts-container .add-contact button:hover {
+    background-color: var(--tealgreen-dark-color);
+}
+
+.Contacts .contacts-container .add-contact h3 {
+    color: var(--darkgrey-color);
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+.SearchBar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.SearchBar form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.SearchBar form img {
+    position: absolute;
+    margin-right: 20px;
+}
+
+.SearchBar form .search-contacts {
+    width: 100%;
+    padding: 10px 50px 10px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+
+.SearchBar form .search-contacts::placeholder {
+    color: rgb(160, 160, 160);
+}

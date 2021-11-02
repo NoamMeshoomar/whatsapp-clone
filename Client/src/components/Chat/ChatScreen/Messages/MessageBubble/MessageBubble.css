@@ -1,0 +1,50 @@
+.mb {
+    width: fit-content;
+    height: fit-content;
+    max-width: 50%;
+    position: relative;
+    padding: 8px 8px 8px 80px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+    word-break: break-all;
+}
+
+.mb pre {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    white-space: pre-line;
+    word-break: break-word;
+}
+
+/* Contact Message Bubble */
+.cb {
+    background-color: #fff;
+    border-radius: 10px 0 10px 10px;
+}
+
+.cb svg {
+    position: absolute;
+    right: -7px;
+    top: 0;
+}
+
+/* My Message Bubble */
+.my {
+    width: fit-content;
+    position: relative;
+    padding: 8px 8px 8px 80px;
+    background-color: #dcf8c6;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 3px;
+}
+
+.my svg {
+    position: absolute;
+    left: -7px;
+    top: 0;
+    transform: scaleX(-1);
+}

@@ -1,0 +1,39 @@
+.Contact {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+.Contact:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.Contact img {
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+.Contact .details h3 {
+    color: var(--darkgrey-color);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.Contact .details p {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(110, 110, 110);
+}
+
+.Contact .date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(175, 175, 175);
+}

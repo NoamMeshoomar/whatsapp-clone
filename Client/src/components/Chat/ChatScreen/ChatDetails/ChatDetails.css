@@ -1,0 +1,40 @@
+.ChatDetails {
+    width: 100%;
+    height: 57px;
+    padding: 8px 20px;
+    background-color: #ededed;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-right: 1px solid rgb(0 0 0 / 8%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ChatDetails .contact-information {
+    display: flex;
+    align-items: center;
+}
+
+.ChatDetails .contact-information img {
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+.ChatDetails .contact-information .contact-details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--darkgrey-color);
+    margin-bottom: 2px;
+}
+
+.ChatDetails .contact-information .contact-details p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(110, 110, 110);
+}
+
+.ChatDetails .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

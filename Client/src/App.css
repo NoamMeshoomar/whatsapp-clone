@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --width: 100vw;
+  --height: 100vh;
+  --tealgreen-color: #128C7E;
+  --tealgreen-dark-color: #075E54;
+  --app-background-color: #009688;
+  --lightgreen-color: #25D366;
+  --blue-color: #34B7F1;
+  --darkgrey-color: rgb(39, 39, 39);
+  --default-font: 'Rubik', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+.App {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background-color: #dddbd1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App::before {
+  content: '';
+  width: 100vw;
+  height: 127px;
+  background-color: var(--app-background-color);
+  position: absolute;
+  top: 0;
+}
+
+/* Button Class */
+
+.classic-button {
+  padding: 12px  20px;
+  background-color: var(--lightgreen-color);
+  border: none;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+/* Input Class */
+
+.classic-input {
+  border: none;
+  border-bottom: 2px solid var(--tealgreen-color);
+  width: 35%;
+  margin: 20px 0;
+  padding: 10px 0;
+  color: var(--darkgrey-color);
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  transition: all .3s ease;
+}
+
+.classic-inputinput::placeholder {
+  font-size: 20px;
+}
+
+.classic-inputinput:focus {
+  border-bottom-color: var(--tealgreen-dark-color);
+}
+
+/* Loading */
+
+.loading {
+  animation: spin 1s ease infinite;
+}
+
+/* Icons */
+
+.icon {
+  margin: 0 10px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.icon:active {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(177, 177, 177);
+  padding: 5px;
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

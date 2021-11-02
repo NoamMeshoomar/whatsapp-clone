@@ -1,0 +1,19 @@
+.Messages {
+    padding: 20px 100px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/images/background.svg');
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+.Messages::-webkit-scrollbar-thumb {
+    background: rgb(182, 182, 182);
+}

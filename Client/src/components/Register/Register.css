@@ -1,0 +1,27 @@
+.Register {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Register form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.Register h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--darkgrey-color);
+}
+
+.Register h3 a {
+    text-decoration: none;
+    color: blue;
+}
