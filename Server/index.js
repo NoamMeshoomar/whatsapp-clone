@@ -23,11 +23,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 app.use(cors());
 app.use(helmet());
-
 app.use(express.json());
+
 app.use('/uploads', express.static('uploads'));
 
-const baseURL = '/api/v1';
+const baseURL = '/api';
 
 app.use(`${ baseURL }/users`, usersRoute);
 app.use(`${ baseURL }/contacts`, contactsRoute);

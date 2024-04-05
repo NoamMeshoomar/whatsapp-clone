@@ -47,7 +47,6 @@ const Login = () => {
             history.push('/');
         })
         .catch(err => {
-            setErrors(err.response.data.errors);
             dispatch(logout());
             setLoading(false);
         });

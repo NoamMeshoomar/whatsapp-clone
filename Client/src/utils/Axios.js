@@ -4,5 +4,5 @@ import axios from 'axios';
 // https://whatsapp-noam.herokuapp.com/api/v1
 
 export default axios.create({
-    baseURL: 'https://whatsapp-noam.herokuapp.com/api/v1'
+    baseURL: 'https://whatsapp-noam-e3e0965ccb9d.herokuapp.com/api'
 });

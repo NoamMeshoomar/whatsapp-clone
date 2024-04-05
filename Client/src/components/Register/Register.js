@@ -47,7 +47,6 @@ const Register = () => {
             history.push('/');
         })
         .catch(err => {
-            setErrors(err.response.data.errors);
             setLoading(false);
         });
     }
